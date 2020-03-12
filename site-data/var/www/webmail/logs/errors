@@ -1,14 +1,16 @@
-[06-Mar-2020 09:10:29 +0530]: <g47g7agk> DB Error: SQLSTATE[HY000] [1045] Access denied for user 'roundcube'@'localhost' (using password: NO) in /var/www/webmail/program/lib/Roundcube/rcube_db.php on line 175 (GET /)
-[06-Mar-2020 09:10:29 +0530]: <g47g7agk> PHP Error: config.inc.php was not found. (GET /)
-[06-Mar-2020 09:14:48 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 416
-[06-Mar-2020 09:14:48 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 417
-[06-Mar-2020 09:15:34 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 291
-[06-Mar-2020 09:15:34 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 292
-[06-Mar-2020 09:15:35 Asia/Kolkata] ERROR: Invalid response code received from server (550)
-[06-Mar-2020 09:16:23 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 291
-[06-Mar-2020 09:16:23 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 292
-[06-Mar-2020 09:16:23 Asia/Kolkata] ERROR: Invalid response code received from server (550)
-[06-Mar-2020 09:20:54 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 291
-[06-Mar-2020 09:20:54 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 292
-[06-Mar-2020 09:20:54 Asia/Kolkata] ERROR: SMTP server does not support authentication ()
-[06-Mar-2020 10:28:49 +0530]: <g47g7agk> IMAP Error: Login failed for chevylin@mundi-tv.tk from 220.129.187.34. AUTHENTICATE PLAIN: Authentication failed. in /var/www/webmail/program/lib/Roundcube/rcube_imap.php on line 196 (POST /?_task=login&_action=login)
+[12-Mar-2020 08:16:47 +0530]: <o3p9nsnl> DB Error: SQLSTATE[HY000] [1045] Access denied for user 'roundcube'@'localhost' (using password: NO) in /var/www/webmail/program/lib/Roundcube/rcube_db.php on line 175 (GET /)
+[12-Mar-2020 08:16:47 +0530]: <o3p9nsnl> PHP Error: config.inc.php was not found. (GET /)
+[12-Mar-2020 08:16:52 +0530]: <o3p9nsnl> DB Error: SQLSTATE[HY000] [1045] Access denied for user 'roundcube'@'localhost' (using password: NO) in /var/www/webmail/program/lib/Roundcube/rcube_db.php on line 175 (GET /)
+[12-Mar-2020 08:16:52 +0530]: <o3p9nsnl> PHP Error: config.inc.php was not found. (GET /)
+[12-Mar-2020 08:22:15 +0530]: <o3p9nsnl> DB Error: SQLSTATE[HY000] [1045] Access denied for user 'roundcube'@'localhost' (using password: NO) in /var/www/webmail/program/lib/Roundcube/rcube_db.php on line 175 (GET /)
+[12-Mar-2020 08:22:15 +0530]: <o3p9nsnl> PHP Error: config.inc.php was not found. (GET /)
+[12-Mar-2020 08:23:36 +0530]: <uhupulah> DB Error: SQLSTATE[HY000] [1045] Access denied for user 'roundcube'@'localhost' (using password: NO) in /var/www/webmail/program/lib/Roundcube/rcube_db.php on line 175 (GET /)
+[12-Mar-2020 08:23:36 +0530]: <uhupulah> PHP Error: config.inc.php was not found. (GET /)
+[12-Mar-2020 08:31:48 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 291
+[12-Mar-2020 08:31:48 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 292
+[12-Mar-2020 08:31:49 Asia/Kolkata] ERROR: Invalid response code received from server (-1)
+[12-Mar-2020 08:32:15 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 416
+[12-Mar-2020 08:32:15 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 417
+[12-Mar-2020 08:32:22 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 416
+[12-Mar-2020 08:32:22 Asia/Kolkata] PHP Deprecated:  idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /var/www/webmail/installer/test.php on line 417
+[12-Mar-2020 08:32:42 +0530]: <o3p9nsnl> IMAP Error: Login failed for chevylin from 111.250.7.191. Could not connect to localhost:143: Connection refused in /var/www/webmail/program/lib/Roundcube/rcube_imap.php on line 196 (POST /?_task=login&_action=login)
