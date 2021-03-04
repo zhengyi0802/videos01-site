@@ -690,21 +690,21 @@ class Encoder extends ObjectYPT {
         if (in_array($order_id, $global['multiResolutionOrder'])) {
             error_log("Encoder::send() multiResolutionOrder");
             if (in_array($order_id, $global['hasHDOrder'])) {
-                $return->sends[] = $this->multiResolutionSend("HD", "mp4", $videos_id);
+                $return->sends[] = $this->multiResolutionSend("4K", "mp4", $videos_id);
                 if (in_array($order_id, $global['bothVideosOrder'])) { // make the webm too
-                    $return->sends[] = $this->multiResolutionSend("HD", "webm", $videos_id);
+                    $return->sends[] = $this->multiResolutionSend("4K", "webm", $videos_id);
                 }
             }
             if (in_array($order_id, $global['hasSDOrder'])) {
-                $return->sends[] = $this->multiResolutionSend("SD", "mp4", $videos_id);
+                $return->sends[] = $this->multiResolutionSend("FHD", "mp4", $videos_id);
                 if (in_array($order_id, $global['bothVideosOrder'])) { // make the webm too
-                    $return->sends[] = $this->multiResolutionSend("SD", "webm", $videos_id);
+                    $return->sends[] = $this->multiResolutionSend("FHD", "webm", $videos_id);
                 }
             }
             if (in_array($order_id, $global['hasLowOrder'])) {
-                $return->sends[] = $this->multiResolutionSend("Low", "mp4", $videos_id);
+                $return->sends[] = $this->multiResolutionSend("HD", "mp4", $videos_id);
                 if (in_array($order_id, $global['bothVideosOrder'])) { // make the webm too
-                    $return->sends[] = $this->multiResolutionSend("Low", "webm", $videos_id);
+                    $return->sends[] = $this->multiResolutionSend("HD", "webm", $videos_id);
                 }
             }
         } else {

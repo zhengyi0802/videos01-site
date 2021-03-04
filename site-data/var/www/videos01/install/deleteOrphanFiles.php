@@ -29,7 +29,7 @@ foreach (glob("../videos/*", GLOB_BRACE) as $filename) {
             if (!empty($baseName[1])) {
                 $files[$base] = array($baseName[0], $filename);
             } else {
-                $types = array('_HD', '_Low', '_SD');
+                $types = array('_4K', '_HD', '_FHD');
                 $notFound = true;
                 foreach ($types as $value) {
                     $baseName = explode($value, $base);

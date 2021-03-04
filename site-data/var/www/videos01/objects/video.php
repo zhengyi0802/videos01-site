@@ -2166,7 +2166,7 @@ if (!class_exists('Video')) {
          *
          * @param type $filename
          * @param type $type
-         * @return type .jpg .gif .webp _thumbs.jpg _Low.mp4 _SD.mp4 _HD.mp4
+         * @return type .jpg .gif .webp _thumbs.jpg _HD.mp4 _FHD.mp4 _4K.mp4
          */
         static function getSourceFile($filename, $type = ".jpg", $includeS3 = false) {
             global $global, $advancedCustom, $videosPaths;
@@ -2207,7 +2207,7 @@ if (!class_exists('Video')) {
                 if ($type == ".m3u8") {
                     $source['path'] = "{$global['systemRootPath']}videos/{$filename}/index{$type}";
                 }
-                $video = Video::getVideoFromFileNameLight(str_replace(array('_Low', '_SD', '_HD'), array('', '', ''), $filename));
+                $video = Video::getVideoFromFileNameLight(str_replace(array('_HD', '_FHD', '_4K'), array('', '', ''), $filename));
                 $canUseCDN = canUseCDN($video['id']);
 
                 if (!empty($video['sites_id']) && ($type == ".mp3" || $type == ".mp4" || $type == ".webm" || $type == ".m3u8" || $type == ".pdf")) {
@@ -2256,7 +2256,7 @@ if (!class_exists('Video')) {
         }
 
         static function getVideosPaths($filename, $includeS3 = false) {
-            $types = array('', '_Low', '_SD', '_HD');
+            $types = array('', '_HD', '_FHD', '_4K');
             $videos = array();
 
             $plugin = YouPHPTubePlugin::loadPluginIfEnabled("VideoHLS");

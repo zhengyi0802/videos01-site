@@ -72,21 +72,21 @@ if (!class_exists('Format')) {
             $destinationFile = $path_parts['dirname'] . "/" . $path_parts['filename'] . "_converted";
 
             if (in_array($order, $global['hasHDOrder'])) {
-                $obj = static::execOrder(12, $pathFileName, $destinationFile . "_HD.mp4", $encoder_queue_id);
+                $obj = static::execOrder(12, $pathFileName, $destinationFile . "_4K.mp4", $encoder_queue_id);
                 if (in_array($order, $global['bothVideosOrder'])) { // make the webm too
-                    $obj = static::execOrder(22, $pathFileName, $destinationFile . "_HD.webm", $encoder_queue_id);
+                    $obj = static::execOrder(22, $pathFileName, $destinationFile . "_4K.webm", $encoder_queue_id);
                 }
             }
             if (in_array($order, $global['hasSDOrder'])) {
-                $obj = static::execOrder(11, $pathFileName, $destinationFile . "_SD.mp4", $encoder_queue_id);
+                $obj = static::execOrder(11, $pathFileName, $destinationFile . "_FHD.mp4", $encoder_queue_id);
                 if (in_array($order, $global['bothVideosOrder'])) { // make the webm too
-                    $obj = static::execOrder(21, $pathFileName, $destinationFile . "_SD.webm", $encoder_queue_id);
+                    $obj = static::execOrder(21, $pathFileName, $destinationFile . "_FHD.webm", $encoder_queue_id);
                 }
             }
             if (in_array($order, $global['hasLowOrder'])) {
-                $obj = static::execOrder(10, $pathFileName, $destinationFile . "_Low.mp4", $encoder_queue_id);
+                $obj = static::execOrder(10, $pathFileName, $destinationFile . "_HD.mp4", $encoder_queue_id);
                 if (in_array($order, $global['bothVideosOrder'])) { // make the webm too
-                    $obj = static::execOrder(20, $pathFileName, $destinationFile . "_Low.webm", $encoder_queue_id);
+                    $obj = static::execOrder(20, $pathFileName, $destinationFile . "_HD.webm", $encoder_queue_id);
                 }
             }
 
@@ -163,9 +163,9 @@ if (!class_exists('Format')) {
             $destinationFile = "{$parts["dirname"]}/{$parts["filename"]}/";
             // create a directory
             mkdir($destinationFile);
-            mkdir($destinationFile . "low");
-            mkdir($destinationFile . "sd");
             mkdir($destinationFile . "hd");
+            mkdir($destinationFile . "fhd");
+            mkdir($destinationFile . "4k");
             // create a encryption key
             $key = openssl_random_pseudo_bytes(16);
             $keyFileName = "enc_" . uniqid() . ".key";

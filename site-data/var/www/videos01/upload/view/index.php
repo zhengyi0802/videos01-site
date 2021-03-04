@@ -481,7 +481,7 @@ if (!empty($_GET['noNavbar'])) {
                                 <label style="" id="">
                                     <input type="checkbox" id="inputLow" <?php if (!empty($advancedCustom->doNotShowEncoderHLS)) echo 'checked="checked"'; ?> class="mp4Checkbox" onclick="if ($(this).is(':checked')) {
                                                 $('#inputHLS').prop('checked', false);
-                                            }"> Low
+                                            }"> HD
                                 </label>
         <?php
     }
@@ -490,7 +490,7 @@ if (!empty($_GET['noNavbar'])) {
                                 <label id="">
                                     <input type="checkbox" id="inputSD" <?php if (!empty($advancedCustom->doNotShowEncoderHLS)) echo 'checked="checked"'; ?> class="mp4Checkbox" onclick="if ($(this).is(':checked')) {
                                                 $('#inputHLS').prop('checked', false);
-                                            }"> SD
+                                            }"> FHD
                                 </label>
                                 <?php
                             }
@@ -498,7 +498,7 @@ if (!empty($_GET['noNavbar'])) {
                                 ?> 
                                 <label>
                                     <input type="checkbox" id="inputHD" <?php if (!empty($advancedCustom->doNotShowEncoderHLS)) echo 'checked="checked"'; ?> class="mp4Checkbox" onclick="if ($(this).is(':checked')) {
-                                                $('#inputHLS').prop('checked', false);}"> HD
+                                                $('#inputHLS').prop('checked', false);}"> 4K
                                 </label>
         <?php
     }
@@ -925,23 +925,23 @@ if (!empty($_GET['noNavbar'])) {
                                     var l = getLocation(row.streamer);
                                     var title = '<a href="' + row.streamer + '" target="_blank" class="btn btn-primary btn-xs">' + l.hostname + ' <span class="badge">Priority ' + row.priority + '</span></a>';
                                     title += '<br><span class="label label-primary">' + row.format + '</span>';
-                                    if (row.mp4_filesize_Low) {
-                                        title += '<br><span class="label label-success fileSize" value="' + row.mp4_filesize_Low + '">MP4 Low Size: ' + row.mp4_filesize_human_Low + '</span>';
-                                    }
-                                    if (row.mp4_filesize_SD) {
-                                        title += '<br><span class="label label-success fileSize" value="' + row.mp4_filesize_SD + '">MP4 SD Size: ' + row.mp4_filesize_human_SD + '</span>';
-                                    }
                                     if (row.mp4_filesize_HD) {
                                         title += '<br><span class="label label-success fileSize" value="' + row.mp4_filesize_HD + '">MP4 HD Size: ' + row.mp4_filesize_human_HD + '</span>';
                                     }
-                                    if (row.webm_filesize_Low) {
-                                        title += '<br><span class="label label-success fileSize" value="' + row.webm_filesize_Low + '">WEBM Low Size: ' + row.webm_filesize_human_Low + '</span>';
+                                    if (row.mp4_filesize_FHD) {
+                                        title += '<br><span class="label label-success fileSize" value="' + row.mp4_filesize_FHD + '">MP4 FHD Size: ' + row.mp4_filesize_human_FHD + '</span>';
                                     }
-                                    if (row.webm_filesize_SD) {
-                                        title += '<br><span class="label label-success fileSize" value="' + row.webm_filesize_SD + '">WEBM SD Size: ' + row.webm_filesize_human_SD + '</span>';
+                                    if (row.mp4_filesize_4K) {
+                                        title += '<br><span class="label label-success fileSize" value="' + row.mp4_filesize_4K + '">MP4 4K Size: ' + row.mp4_filesize_human_4K + '</span>';
                                     }
                                     if (row.webm_filesize_HD) {
                                         title += '<br><span class="label label-success fileSize" value="' + row.webm_filesize_HD + '">WEBM HD Size: ' + row.webm_filesize_human_HD + '</span>';
+                                    }
+                                    if (row.webm_filesize_FHD) {
+                                        title += '<br><span class="label label-success fileSize" value="' + row.webm_filesize_FHD + '">WEBM FHD Size: ' + row.webm_filesize_human_FHD + '</span>';
+                                    }
+                                    if (row.webm_filesize_4K) {
+                                        title += '<br><span class="label label-success fileSize" value="' + row.webm_filesize_4K + '">WEBM 4K Size: ' + row.webm_filesize_human_4K + '</span>';
                                     }
                                     if (row.hls_filesize) {
                                         title += '<br><span class="label label-success fileSize" value="' + row.hls_filesize + '">HLS Size: ' + row.hls_filesize_human + '</span>';

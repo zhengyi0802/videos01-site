@@ -6,7 +6,7 @@ require_once '../objects/Streamer.php';
 require_once '../objects/Login.php';
 header('Content-Type: application/json');
 $rows = Encoder::getAll(true);
-$resolutions = array('Low', 'SD', 'HD');
+$resolutions = array('HD', 'FHD', '4K');
 foreach ($rows as $key => $value) {
     $f = new Format($rows[$key]['formats_id']);
     $rows[$key]['format'] = $f->getName();

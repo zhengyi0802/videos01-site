@@ -956,7 +956,7 @@ function getVideosURL($fileName, $cache = true) {
         return object_to_array(json_decode($json));
     }
     global $global;
-    $types = array('', '_Low', '_SD', '_HD');
+    $types = array('', '_HD', '_FHD', '_4K');
     $files = array();
 // old
     require_once $global['systemRootPath'] . 'objects/video.php';

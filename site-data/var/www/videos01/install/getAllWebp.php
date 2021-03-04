@@ -45,7 +45,7 @@ foreach ($videos as $value) {
 }
 
 function getFirstVideoURL($videoFileName) {
-    $types = array('', '_Low', '_SD', '_HD');
+    $types = array('', '_HD', '_FHD', '_4K');
     $videosList = getVideosURL($videoFileName);
     if (!empty($videosList['m3u8']["url"])) {
         return $videosList['m3u8']["url"];
@@ -61,7 +61,7 @@ function getFirstVideoURL($videoFileName) {
 }
 
 function getFirstVideoPath($videoFileName) {
-    $types = array('', '_Low', '_SD', '_HD');
+    $types = array('', '_HD', '_FHD', '_4K');
     $videosList = getVideosURL($videoFileName);
     if (!empty($videosList['m3u8']["path"])) {
         return $videosList['m3u8']["path"];
